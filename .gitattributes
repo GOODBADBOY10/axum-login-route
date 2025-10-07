@@ -1,0 +1,5 @@
+# Tell GitHub this project is Rust
+*.rs linguist-language=Rust
+
+# Ignore the Makefile from language stats
+Makefile linguist-detectable=false
