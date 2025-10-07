@@ -16,7 +16,6 @@ impl IntoResponse for Error {
     }
 }
 
-// region: ---- Error Boilerplate ----
 impl std::fmt::Display for Error {
     fn fmt(&self, fmt: &mut std::fmt::Formatter) -> core::result::Result<(), std::fmt::Error> {
         write!(fmt, "{self:?}")
@@ -24,5 +23,3 @@ impl std::fmt::Display for Error {
 }
 
 impl std::error::Error for Error {}
-
-//end region: ---- Error Boilerplate ----
