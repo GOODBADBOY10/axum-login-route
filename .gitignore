@@ -1,0 +1,29 @@
+# Compiled files
+/target/
+
+# Cargo package files
+**/*.rs.bk
+
+# Backup files
+*.bak
+*.old
+
+# Editor and IDE settings
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# macOS system files
+.DS_Store
+
+# Windows system files
+Thumbs.db
+ehthumbs.db
+desktop.ini
+
+# Logs
+*.log
+
+# Environment variables or secrets (if any)
+.env
