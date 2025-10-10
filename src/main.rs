@@ -1,7 +1,6 @@
 #![allow(unused)]
 
 pub use self::error::{Error, Result};
-
 use axum::middleware;
 use axum::response::Response;
 use tower_cookies::CookieManagerLayer;
@@ -18,6 +17,7 @@ use serde::Deserialize;
 
 
 mod error;
+mod model;
 mod web;
 
 #[tokio::main]
@@ -36,6 +36,7 @@ async fn main() {
         .serve(routes_all.into_make_service())
         .await
         .unwrap();
+    
 }
 
 

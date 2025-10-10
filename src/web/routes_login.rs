@@ -34,9 +34,3 @@ async fn api_login(cookies: Cookies, payload: Json<LoginPayload>) -> Result<Json
 
     Ok(body)
 }
-
-// #[derive(Debug, Deserialize)]
-// struct LoginPayload {
-//     username: String,
-//     pwd: String,
-// }
